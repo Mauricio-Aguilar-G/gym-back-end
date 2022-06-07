@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon app_gym",
     "heroku-postbuild": "npm run build",
-    "build": "node app_gym"
+    "start": "node app_gym"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,12 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app_gym.js",
+  "scripts": {
+    "heroku-postbuild": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

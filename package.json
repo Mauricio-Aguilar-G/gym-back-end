@@ -1,12 +1,16 @@
 {
   "name": "4",
   "version": "1.0.0",
-  "description": "",
   "main": "app_gym.js",
   "scripts": {
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "dev": "nodemon app_gym.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }

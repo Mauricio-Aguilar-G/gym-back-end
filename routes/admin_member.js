@@ -9,7 +9,7 @@ route.get('/member/:id', (req, res) =>{
     let result = viewMember(req.params.id);
     result
     .then(member =>{
-        res.json(member.name);
+        res.json(member);
     })
     .catch(err => {
         res.status(400).json({

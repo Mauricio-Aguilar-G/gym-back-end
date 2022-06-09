@@ -2,14 +2,13 @@ const express = require('express');
 const Joi = require('joi');
 const route = express.Router();
 const Admin = require('../models/admin_model');
-const Member = require('../models/member_model');
 
 // View admin
 route.get('/:id', (req, res) =>{
     let result = viewAdmin(req.params.id);
     result
     .then(admin =>{
-        res.json(admin.name);
+        res.json(admin);
     })
     .catch(err => {
         res.status(400).json({

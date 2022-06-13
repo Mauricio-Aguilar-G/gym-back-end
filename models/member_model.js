@@ -11,12 +11,10 @@ const memberSchema = new mongoose.Schema({
         type: Number,required: true, unique: true
     },
     weight:{
-        w: { type: String},
-        lastupdate: { type: Date, default: Date.now}
+        type: String
     },
     height:{
-        h: { type: String},
-        lastupdate: { type: Date, default: Date.now}
+        type: String
     },
     membership:{
         type: Number,default: 30

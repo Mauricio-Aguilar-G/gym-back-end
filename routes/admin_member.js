@@ -130,8 +130,8 @@ async function createMember(body){
         name : body.name,
         age : body.age,
         number : body.number,
-        weight: {w : body.weight},
-        height: {h : body.height}
+        weight: body.weight,
+        height: body.height
     });
     return await member.save();
 }
@@ -143,8 +143,8 @@ async function updateMember(id, body){
             name: body.name,
             age: body.age,
             number: body.number,
-            weight: {w : body.weight},
-            height: {h : body.height}
+            weight: body.weight,
+            height: body.height
         }
     }, {new:true});
     return member;
